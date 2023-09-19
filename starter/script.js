@@ -98,9 +98,9 @@ let secretNumber = Math.trunc(Math.random() * 20 + 1);
 let score = 20;
 let highscore = 0;
 
-const message= document.querySelector('.message')
+const message = document.querySelector('.message');
 
-// check event  
+// check event
 
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
@@ -140,6 +140,11 @@ document.querySelector('.check').addEventListener('click', function () {
 });
 
 // Again button
+
+const newFeature = function () {
+  console.log('Welcome to the application');
+};
+
 document.querySelector('.again').addEventListener('click', function () {
   score = 20;
   secretNumber = Math.trunc(Math.random() * 20 + 1);
@@ -150,5 +155,4 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.number').style.width = '15rem';
 });
-
-console.log('welcome!');
+newFeature();
